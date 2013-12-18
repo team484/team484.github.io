@@ -1,0 +1,7 @@
+#
+# _config.yml for Team484
+#
+
+exclude: [ "README.md", "LICENSE", "*.sh", "**/*_src*" ]
+production_url: http://team484.github.io
+title : FRC Team 484 Documentation Site

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Team 484 Docs</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<!--<li{% if pathparts[1] == 'software' %} class="active"{% endif %}><a href="/code/">Code</a></li>-->
+				<li{% if pathparts[1] == 'electronics' %} class="active"{% endif %}><a href="/electronics/">Electronics</a></li>
+				<!--<li{% if pathparts[1] == 'hardware' %} class="active"{% endif %}><a href="/hardware/">Hardware</a></li>-->
+				<li{% if pathparts[1] == 'networking' %} class="active"{% endif %}><a href="/networking/">Networking</a></li>
+				<!--<li{% if pathparts[1] == 'software' %} class="active"{% endif %}><a href="/software/">Software</a></li>-->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Links</a></li>
+						<li><a href="/support/vendors.html">Where to buy</a></li>
+						<li class="divider"></li>
+						<li><a href="http://www.team484.org/">Team 484</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" placeholder="Search" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Search</button>
+			</form>
+		</div><!--/.navbar-collapse -->
+	</div>
+</nav>
