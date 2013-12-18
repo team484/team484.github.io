@@ -1,0 +1,16 @@
+---
+# Remember to set production_url in your _config.yml file!
+title : Robots.txt
+---
+#
+# robots.txt for Team484
+#
+
+Sitemap: {{site.production_url}}/sitemap.txt
+
+User-agent: *
+Disallow: /css
+Disallow: /fonts
+Disallow: /honeypot.txt
+Disallow: /images
+Disallow: /js
