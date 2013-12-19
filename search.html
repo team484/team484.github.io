@@ -1,0 +1,37 @@
+---
+layout: default
+title: Search
+---
+<script>
+  (function() {
+    var cx = '003886695760684763460:abzy-3urvxu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script>
+	function getParameter(name)
+	{
+		var results = new RegExp("[\\?&]" + name + "=([^&#]*)").exec(location.search);
+		return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+    $(document).ready(function() {
+		$("input[name=q]").val(getParameter("q"));
+	});
+</script>
+<div class="well col-md-6 col-md-offset-3">
+	<form class="form-inline" role="form">
+		<div class="form-group col-md-8">
+			<input type="text" class="form-control" id="q" name="q" placeholder="Search" value="" />
+		</div>
+		<button type="submit" class="btn btn-primary">Search</button>
+	</form>
+</div>
+<gcse:searchresults-only></gcse:searchresults-only>
+
