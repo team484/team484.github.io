@@ -3,5 +3,5 @@
 #
 
 exclude: [ "README.md", "LICENSE", "*.sh", "**/*_src*" ]
-production_url: http://team484.github.io
+production_url: http://reference.team484.org
 title : FRC Team 484 Documentation Site
