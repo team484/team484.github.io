@@ -1,0 +1,22 @@
+---
+# NOTE: this page doesn't work since only posts have tags
+layout: default
+noindex: True
+title : All Tags
+---
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Tag</th>
+			<th>Pages</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for tag in site.tags %}
+		<tr>
+			<td>{{ tag }}</td>
+		</tr>
+{% endfor %}
+	</tbody>
+</table>

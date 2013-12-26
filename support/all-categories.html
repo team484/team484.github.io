@@ -1,0 +1,23 @@
+---
+# NOTE: this page doesn't work since only posts have categories
+layout: default
+noindex: True
+title : All Categories
+---
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Category</th>
+			<th>Pages</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for cat in site.categories %}
+		<tr>
+			<td>x{{ cat[0] }}</td>
+			<td>x{{ cat[1] }}</td>
+		</tr>
+{% endfor %}
+	</tbody>
+</table>

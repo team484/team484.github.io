@@ -1,0 +1,24 @@
+---
+layout: default
+noindex: True
+title : All Pages
+---
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Page</th>
+			<th>Categories</th>
+			<th>Tags</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for page in site.pages %}
+		<tr>
+			<td><a href="{{ page.url }}">{% if page.title %}{{ page.title }}{% else %}{{ page.url }}{% endif %}</a></td>
+			<td>{% for tag in page.tags %}{{ tag }} {% endfor %}</td>
+			<td>{% for category in page.categories %}{{ category }} {% endfor %}</td>
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
