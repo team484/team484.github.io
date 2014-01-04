@@ -7,5 +7,10 @@ title : Support Pages
 
 [Vendors](vendors.html) - places to buy robot parts
 
+FRC Links:
+ * [Ask an expert](http://www.usfirst.org/community/volunteers/fsm_training_calls)
+ * [Twitter](https://twitter.com/FRCTeams)
+ * [Facebook](https://www.facebook.com/FIRSTRoboticsCompetition)
+
 Website last updated at {{ site.time }}
 
