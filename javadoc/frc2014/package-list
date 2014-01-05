@@ -1,0 +1,15 @@
+com.ni.rio
+edu.wpi.first.wpilibj
+edu.wpi.first.wpilibj.buttons
+edu.wpi.first.wpilibj.camera
+edu.wpi.first.wpilibj.can
+edu.wpi.first.wpilibj.command
+edu.wpi.first.wpilibj.communication
+edu.wpi.first.wpilibj.fpga
+edu.wpi.first.wpilibj.image
+edu.wpi.first.wpilibj.interfaces
+edu.wpi.first.wpilibj.livewindow
+edu.wpi.first.wpilibj.parsing
+edu.wpi.first.wpilibj.smartdashboard
+edu.wpi.first.wpilibj.util
+edu.wpi.first.wpilibj.visa
