@@ -1,0 +1,58 @@
+<project name="wpilib4j-javadoc" default="all">
+	<description>All the steps to go from WPILIB4J download to working JavaDoc</description>
+
+	<property name="tmp.dir" location="/tmp/bleech"/>
+	<property name="src.dir" location="${tmp.dir}/src"/>
+	<property name="doc.dir" location="./frc2014"/>
+
+	<target name="all" depends="clean,init,javadoc">
+	</target>
+
+	<target name="clean" description="remove previously generated javadoc">
+		<delete dir="${doc.dir}"/>
+	</target>
+
+	<target name="cleanup" description="cleanup temporary files">
+		<delete dir="${tmp.dir}"/>
+	</target>
+
+	<target name="extract" description="extract source from zip">
+		<!-- LATER -->
+	</target>
+
+	<target name="init">
+		<mkdir dir="${doc.dir}" />
+	</target>
+
+	<target name="javadoc" description="generate javadoc">
+
+		<tstamp>
+			<format property="now" pattern="MM/dd/yyyy hh:mm aa" />
+		</tstamp>
+
+		<javadoc
+			access="public"
+			author="false"
+			destdir="${doc.dir}"
+			use="true"
+			version="false"
+			windowtitle="WPILib4J - FRC 2014"
+			>
+			<packageset dir="${src.dir}" defaultexcludes="yes">
+				<include name="com/ni/**"/>
+				<include name="edu/**"/>
+				<exclude name="com/sun/**"/>
+			</packageset>
+
+			<doctitle><![CDATA[<h1>WPILib4J for FRC 2014</h1>]]></doctitle>
+			<header><![CDATA[<a href="/javadoc/index.html" target="_top">Team484 Reference Site</a>]]></header>
+			<!--<bottom><![CDATA[<i>Bottom!</i>]]></bottom>-->
+			<footer>Generated on ${now}</footer>
+			<tag name="todo" description="To do:" enabled="false" scope="all" />
+			<tag name="pre" description="???" enabled="false" scope="all" />
+			<group title="National Instruments" packages="com.ni*"/>
+			<group title="WPI" packages="edu.wpi.first.wpilibj*"/>
+		</javadoc>
+	</target>
+
+</project>
