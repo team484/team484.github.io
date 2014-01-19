@@ -7,6 +7,8 @@ tags: [ camera, networking, vision]
 
 [User Manual](um_m10_46940_en_1203.pdf) - [source](http://www.axis.com/files/manuals/um_m10_46940_en_1203.pdf)
 
+[Firmware downloads](http://www.axis.com/techsup/firmware.php) - current version as of Jan 19, 2014 is 5.20.2
+
 Power
 -----
 Power requirements (from the back of the device): 5V at 1.5A
