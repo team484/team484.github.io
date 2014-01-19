@@ -7,20 +7,34 @@ tags: [ camera, networking, vision]
 
 [User Manual](um_m10_46940_en_1203.pdf) - [source](http://www.axis.com/files/manuals/um_m10_46940_en_1203.pdf)
 
+Power
+-----
+Power requirements (from the back of the device): 5V at 1.5A
+
 Defaults
-========
+--------
 Network address: 192.168.0.80
+
 User name: root
+
 Password: (set when first accessed)
 
-Note: the camera will get a DHCP address if it is connected to a network with an accessible DHCP server.
-
 Reset
-=====
-
-Reset to factory settings, this is achieved by:
+-----
+To reset to factory settings:
 
 1.Disconnect power from the camera.
 2.Press and hold the Control button and reconnect power.
 3.Keep the Control button pressed until the Status indicator flashes amber (this may take up to 15 seconds).
 4.Release the Control button. When the Status indicator displays green (which can take up to 1 minute) the process is complete and the camera has been reset.
+
+Open ports
+----------
+ * 80: web interface
+ * 554: H.264 video stream (RTSP)
+
+To Check
+--------
+Will the camera will get a DHCP address if it is connected to a network with an accessible DHCP server?
+
+Is port 443 open for HTTPS?
