@@ -2,7 +2,7 @@
 layout: default
 title: Raspberry Pi Camera
 categories: [ hardware, public]
-tags: [ camera, raspberrypi]
+tags: [ camera, vision, raspberrypi]
 ---
 
 [home page](http://www.raspberrypi.org/camera) - on raspberrypi.org
