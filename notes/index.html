@@ -1,0 +1,20 @@
+---
+title: Notes
+layout: default
+---
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for page in site.posts %}{% if page.noindex %}{% else %}
+		<tr>
+			<td><a href="{{ page.url }}">{{ page.title }}</td>
+			<td>{{ page.date | date: "%m-%d-%Y" }}</td>
+		</tr>
+{% endif %}{% endfor %}
+	</tbody>
+</table>
