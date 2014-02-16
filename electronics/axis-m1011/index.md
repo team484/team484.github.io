@@ -15,7 +15,7 @@ Power requirements (from the back of the device): 5V at 1.5A
 
 Defaults
 --------
-Network address: 192.168.0.80
+Network address: 192.168.0.80.  Some versions are 192.168.0.90.
 
 User name: root
 
@@ -29,6 +29,8 @@ To reset to factory settings:
 2.Press and hold the Control button and reconnect power.
 3.Keep the Control button pressed until the Status indicator flashes amber (this may take up to 15 seconds).
 4.Release the Control button. When the Status indicator displays green (which can take up to 1 minute) the process is complete and the camera has been reset.
+
+At one point we had trouble connecting after a reset.  Connecting a workstation directly (i.e. not through a switch) to the camera worked.
 
 Open ports
 ----------
