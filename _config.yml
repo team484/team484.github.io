@@ -7,4 +7,4 @@ permalink: /notes/:year/:month/:day/:title.html
 production_url: http://reference.team484.org
 title : FRC Team 484 Documentation Site
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
